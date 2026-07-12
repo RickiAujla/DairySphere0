@@ -1,0 +1,16 @@
+.git
+.github
+.vscode
+node_modules
+**/node_modules
+dist
+**/dist
+build
+.env
+.env.*
+*.log
+docker-compose*.yml
+kubernetes
+terraform
+README.md
+LICENSE

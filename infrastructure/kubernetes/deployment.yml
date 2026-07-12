@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dairysphere-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: dairysphere
+  template:
+    metadata:
+      labels:
+        app: dairysphere
+    spec:
+      containers:
+      - name: dairysphere-backend
+        image: dairysphere-backend:latest
+        ports:
+        - containerPort: 3000
